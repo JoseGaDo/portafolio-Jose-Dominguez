@@ -48,3 +48,56 @@ nav h1 {
 .contacto button:hover{
   font-size: 18px;
 }
+
+/* Responsive adjustments for header */
+@media (max-width: 1024px) {
+  nav {
+    gap: 5%;
+  }
+  nav h1 {
+    font-size: 32px;
+    padding-left: 20px;
+  }
+  .sections {
+    font-size: 16px;
+    gap: 12px;
+  }
+  .contacto button {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+  }
+  nav h1 {
+    padding-left: 0;
+    font-size: 26px;
+  }
+  .sections {
+    display: none;
+  }
+  .contacto {
+    margin-left: 0;
+  }
+  .contacto button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  nav h1 {
+    font-size: 22px;
+  }
+  .contacto button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

@@ -219,3 +219,40 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .home h1 { font-size: 8em; }
+  .home h3 { font-size: 22px; width: 70%; margin-left: 15%; }
+  .about { gap: 40px; padding: 24px; }
+  .text-presentation p { font-size: 22px; }
+  .text-presentation h2 { font-size: 4rem; }
+  .projects h1, .design h1, .contact h1 { font-size: 4rem; }
+}
+
+@media (max-width: 768px) {
+  .home h1 { font-size: 5.5em; margin-top: 20px; }
+  .home h3 { width: 90%; margin-left: 5%; font-size: 18px; }
+  .home p { font-size: 18px; margin-top: 8%; }
+  .about { flex-direction: column; gap: 20px; padding: 20px; }
+  .about img { max-height: 320px; width: 100%; object-fit: cover; }
+  .text-presentation p { font-size: 18px; }
+  .text-presentation h2 { font-size: 2.5rem; }
+  .cards-projects { grid-template-columns: 100%; gap: 20px; }
+  .designs { grid-template-columns: 48% 48%; gap: 4%; }
+  .contact { padding: 8%; }
+  .contact h1 { font-size: 3.5rem; }
+  .contact p { font-size: 20px; }
+  .contact button { font-size: 1.6rem; max-width: 60%; padding: 14px; }
+}
+
+@media (max-width:420px) {
+  .home h1 { font-size: 4.2em; }
+  .text-presentation h2 { font-size: 2rem; }
+  .designs { grid-template-columns: 100%; gap: 16px; }
+  .card h2 { font-size: 1.6rem; }
+  .card a { font-size: 20px; }
+  .card p, .card span { font-size: 16px; }
+  .contact h1 { font-size: 2.8rem; }
+  .contact button { font-size: 1.4rem; max-width: 80%; }
+}
