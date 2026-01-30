@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&family=Outfit:wght@300;400;600;700&display=swap");
+
+nav {
+  display: flex;
+  gap: 15%;
+  z-index: 11;
+  position: relative;
+}
+
+nav h1 {
+  padding-left: 40px;
+  font-size: 36px;
+  color: #187537;
+  font-weight: 500;
+
+}
+.sections {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  gap: 20px;
+  font-family: "Roboto";
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+.sections a:hover {
+  color: #187537;
+}
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15%;
+}
+.contacto button {
+  background-color: #187537;
+  border-radius: 50px;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  box-shadow: -5px 5px 20px rgba(24,117,55, 0.4);
+  transition: ease 300ms;
+  cursor: pointer;
+}
+.contacto button:hover{
+  font-size: 18px;
+}
