@@ -2,17 +2,27 @@
 
 nav {
   display: flex;
+  flex-direction: column;
   gap: 15%;
   z-index: 11;
-  position: relative;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(4px);
+  scroll-behavior: smooth;
 }
-
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 nav h1 {
   padding-left: 40px;
   font-size: 36px;
   color: #187537;
   font-weight: 500;
-
 }
 .sections {
   display: flex;
@@ -27,6 +37,10 @@ nav h1 {
 .sections a:hover {
   color: #187537;
 }
+/* Difumina las opciones no seleccionadas */
+/* .sections:hover> :not(:hover){
+  filter: blur(1px);
+} */
 .contacto {
   display: flex;
   flex-direction: row;
