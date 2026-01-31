@@ -30,7 +30,7 @@ export default function App() {
       </section>
       <section id="about" className="about">
         <div className="presentation">
-          <img src="/foto_jose.jpeg" alt="foto presentación" />
+          <img src="foto_jose.jpeg" alt="foto presentación" />
         </div>
         <div className="text-presentation">
           <h2>Sobre Mi</h2>
